@@ -12,10 +12,14 @@ struct ContentView: View {
         Text("Smith-Ennismore-Lakefield")
         .font(.largeTitle)
     
-       
+        VStack (spacing:20 ){
+            Text("6° | Cloudy")
+            .font(.title)
+            .foregroundColor(Color.black)
+        }
         
             
-        
+
         
         
         VStack {

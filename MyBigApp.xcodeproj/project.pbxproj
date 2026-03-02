@@ -6,17 +6,22 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1AFB34172F561FF200955525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AFB34112F561FF200955525 /* Assets.xcassets */; };
+		1AFB34182F561FF200955525 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB34122F561FF200955525 /* LandingView.swift */; };
+		1AFB34192F561FF200955525 /* MyBigAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB34132F561FF200955525 /* MyBigAppApp.swift */; };
+		1AFB341A2F561FF200955525 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB34142F561FF200955525 /* SwiftUIView.swift */; };
+		1AFB341B2F561FF200955525 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB34152F561FF200955525 /* WeatherView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		1AFB33F62F54B87B00955525 /* MyBigApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBigApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AFB34112F561FF200955525 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AFB34122F561FF200955525 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		1AFB34132F561FF200955525 /* MyBigAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBigAppApp.swift; sourceTree = "<group>"; };
+		1AFB34142F561FF200955525 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		1AFB34152F561FF200955525 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		1AFB33F82F54B87B00955525 /* MyBigApp */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MyBigApp;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1AFB33F32F54B87B00955525 /* Frameworks */ = {
@@ -32,7 +37,8 @@
 		1AFB33ED2F54B87B00955525 = {
 			isa = PBXGroup;
 			children = (
-				1AFB33F82F54B87B00955525 /* MyBigApp */,
+				1AFB341C2F56201200955525 /* Views */,
+				1AFB34162F561FF200955525 /* MyBigApp */,
 				1AFB33F72F54B87B00955525 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +49,25 @@
 				1AFB33F62F54B87B00955525 /* MyBigApp.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1AFB34162F561FF200955525 /* MyBigApp */ = {
+			isa = PBXGroup;
+			children = (
+				1AFB34112F561FF200955525 /* Assets.xcassets */,
+				1AFB34122F561FF200955525 /* LandingView.swift */,
+				1AFB34132F561FF200955525 /* MyBigAppApp.swift */,
+				1AFB34152F561FF200955525 /* WeatherView.swift */,
+			);
+			path = MyBigApp;
+			sourceTree = "<group>";
+		};
+		1AFB341C2F56201200955525 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1AFB34142F561FF200955525 /* SwiftUIView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +84,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				1AFB33F82F54B87B00955525 /* MyBigApp */,
 			);
 			name = MyBigApp;
 			packageProductDependencies = (
@@ -109,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AFB34172F561FF200955525 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AFB34182F561FF200955525 /* LandingView.swift in Sources */,
+				1AFB34192F561FF200955525 /* MyBigAppApp.swift in Sources */,
+				1AFB341A2F561FF200955525 /* SwiftUIView.swift in Sources */,
+				1AFB341B2F561FF200955525 /* WeatherView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,10 +12,12 @@ struct SwiftUIView: View {
         
         NavigationStack {
            
-            VStack{
+            HStack{
+                Image(systemName: "house")
+                    .navigationTitle("Home Page")
                 Text("")
                     .navigationTitle("􀎞 Home Page")
-
+             
             }
             
             HStack {
@@ -59,9 +61,15 @@ struct SwiftUIView: View {
             }
             .padding(.horizontal)
         }
+        HStack{
+            
         
-       
-                
+       Rectangle()
+            .frame(width:350,height:50)
+            .foregroundColor(Color.white)
+            .border(Color.black)
+            
+        }
         
         
         

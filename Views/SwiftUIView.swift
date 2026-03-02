@@ -11,39 +11,61 @@ struct SwiftUIView: View {
     var body: some View {
         
         NavigationStack {
-            Text("")
-                .navigationTitle("􀎞 Home Page")
-            
+           
+            VStack{
+                Text("")
+                    .navigationTitle("􀎞 Home Page")
+
+            }
             
             HStack {
-                Text("Click here to go to your digital wardrobe and get organized!")
-                    .font(.caption).lineLimit(1)
-                Rectangle()
-                          .frame(width:30 , height:10)
+                VStack{
+                    Rectangle()
+                        .frame(width:30 , height:10)
+                    Text("Click here to go to your digital wardrobe and get organized!")
+                        .font(.caption)
+                  
+                }
                 Divider()
-                Text("Click here to create your outfit for the day!")
-                    .font(.caption)
-                Rectangle()
-                          .frame(width:30 , height:10)
+                VStack{
+                    Rectangle()
+                        .frame(width:30 , height:10)
+                    Text("Click here to create your outfit for the day!")
+                        .font(.caption)
+                   
+                }
             }
             .padding([.horizontal])
             Divider()
             HStack {
-                Text("Click here to go to your hearted outfits from before!")
-                    .font(.caption)
-                    .layoutPriority(1) // Truncate last
-          Rectangle()
-                    .frame(width:30 , height:10)
+                VStack{
+                    Rectangle()
+                        .frame(width:30 , height:10)
+                    Text("Click here to go to your hearted outfits from beforee!!!")
+                        .font(.caption)
+                        .layoutPriority(1) // Truncate last
+                    
+                }
                 Divider()
-                Text("Click here to take a picture of your clothes and get organized!")
-                    .font(.caption)
-                    .layoutPriority(1) // Truncate last
-                Rectangle()
-                          .frame(width:30 , height:10)
                 
+                VStack{
+                    Rectangle()
+                        .frame(width:30 , height:10)
+                    Text("Click here to take a picture of your clothes and get organized!")
+                        .font(.caption)
+                        .layoutPriority(1) // Truncate last
+                   
+                }
             }
             .padding(.horizontal)
         }
+        
+       
+                
+        
+        
+        
+        
         
         
         

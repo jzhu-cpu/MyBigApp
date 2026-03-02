@@ -16,32 +16,31 @@ struct SwiftUIView: View {
             
             
             HStack {
-                Text("ww")
-                    .font(.largeTitle).lineLimit(1)
-                Image(systemName: "globe" )                   .resizable()
-                    .frame(width: 80, height: 80)
-                   
-                Text("rty")
-                    .font(.largeTitle)
-                Image(systemName: "globe")       .resizable()
-                    .frame(width:80,height:80)
-                
-                    .layoutPriority(1) // Truncate last
+                Text("Click here to go to your digital wardrobe and get organized!")
+                    .font(.caption).lineLimit(1)
+                Rectangle()
+                          .frame(width:30 , height:10)
+                Divider()
+                Text("Click here to create your outfit for the day!")
+                    .font(.caption)
+                Rectangle()
+                          .frame(width:30 , height:10)
             }
             .padding([.horizontal])
             Divider()
             HStack {
-                Text("wwww")
-                    .font(.largeTitle)
+                Text("Click here to go to your hearted outfits from before!")
+                    .font(.caption)
                     .layoutPriority(1) // Truncate last
-                Image(systemName:"globe")
-             
-                    .resizable()
-                    .frame(width: 80, height: 80)
-                Text("fghj")
-                Image(systemName:"globe")     .resizable()
-                    .frame(width:80,height:80)
-                    .font(.largeTitle).lineLimit(1) // Don't let text wrap
+          Rectangle()
+                    .frame(width:30 , height:10)
+                Divider()
+                Text("Click here to take a picture of your clothes and get organized!")
+                    .font(.caption)
+                    .layoutPriority(1) // Truncate last
+                Rectangle()
+                          .frame(width:30 , height:10)
+                
             }
             .padding(.horizontal)
         }

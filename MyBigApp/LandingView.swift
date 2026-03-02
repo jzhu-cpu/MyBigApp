@@ -10,29 +10,114 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         Text("Smith-Ennismore-Lakefield")
-        .font(.largeTitle)
+        .font(.system(size: 33))
     
         VStack (spacing:20 ){
             Text("6° | Cloudy")
             .font(.title)
             .foregroundColor(Color.black)
-        }
-        
             
-
-        
+        }
         
         VStack {
-            VStack {
-                Rectangle ()
+            HStack {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 25)
+                        .foregroundColor(Color.blue)
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text("Feels like")
+                            
+                                .font(.system(size:30))
+                            Text("Number")
+                                .font(.system(size: 36))
+                            
+                            Text("something else")
+                                .font(.system(size:20))
+                            
+                            Spacer()
+                        }
+                        Spacer()
+                    }
+                    .padding()
+                    
+                }
+                
+                ZStack {
+                    RoundedRectangle(cornerRadius: 25)
+                        .foregroundColor(Color.blue)
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text("Feels like")
+                            
+                                .font(.system(size:30))
+                            Text("Number")
+                                .font(.system(size: 36))
+                            Spacer()
+                        }
+                        Spacer()
+                    }
+                    .padding()
+                    
+                }
+
+            }
+            HStack {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 25)
+                        .foregroundColor(Color.blue)
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text("Feels like")
+                            
+                                .font(.system(size:30))
+                            Text("Number")
+                                .font(.system(size: 36))
+                            Spacer()
+                        }
+                        Spacer()
+                    }
+                    .padding()
+                    
+                }
+                ZStack {
+                    RoundedRectangle(cornerRadius: 25)
+                        .foregroundColor(Color.blue)
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text("Feels like")
+                            
+                                .font(.system(size:30))
+                            Text("Number")
+                                .font(.system(size: 36))
+                            Spacer()
+                        }
+                        Spacer()
+                    }
+                    .padding()
+                    
+                }
             }
             
-            HStack {
-               Rectangle()
-                Rectangle()
-            }
-          
         }
+
+
+        
+
+        VStack {
+            VStack {
+                HStack {
+                    Rectangle ()
+                }
+                
+                HStack {
+                    Rectangle()
+                    Rectangle()
+                }
+              
+            }
+        }
+
         .padding()
     }
 }

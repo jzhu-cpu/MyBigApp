@@ -63,11 +63,15 @@ struct SwiftUIView: View {
         }
         HStack{
             
-        
-       Rectangle()
-            .frame(width:350,height:50)
-            .foregroundColor(Color.white)
-            .border(Color.black)
+            ZStack {
+                Text("home")
+                
+                Rectangle()
+                    .frame(width:350,height:50)
+                    .foregroundColor(Color.white)
+                    .border(Color.black)
+                
+            }
             
         }
         
